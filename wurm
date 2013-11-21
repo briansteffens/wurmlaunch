@@ -1,0 +1,8 @@
+#!/bin/bash
+
+JNLP_WEB='http://wurmonline.com/client/wurmclient.jnlp'
+JNLP_FILE='/tmp/wurmlaunch-wurmclient.jnlp'
+
+`wget --output-document="$JNLP_FILE" http://www.wurmonline.com/client/wurmclient.jnlp`
+
+`javaws "$JNLP_FILE"` &
